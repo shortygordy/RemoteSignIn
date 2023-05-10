@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Switch Log In</h1>
+        <form id="checkin-form">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <div id="status">
+            <p>Currently signed in:
+                <ul id="signed-in-list"></ul>
+            </p>
+            <button id="sign-out">Sign Out</button>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal-content">
+            <p>Another person is already signed in. Are you sure you want to sign in as <span id="modal-name"></span>?</p>
+            <div class="modal-buttons">
+                <button id="modal-cancel">Cancel</button>
+                <button id="modal-sign-out">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
